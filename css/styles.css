@@ -307,6 +307,7 @@ main.main {
 
 .slide__item {
     flex: 1 0 auto;
+    border: 1px solid transparent;
 }
 
 .slide__item:last-child {
