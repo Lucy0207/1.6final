@@ -352,17 +352,17 @@ button {
     background-color: #F8F8F8;
 }
 
-/*button:active.slide__btn {*/
-/*    border-radius: 6px;*/
-/*    border: 2px solid #B8FFEC;*/
-/*    background: #FFF;*/
-/*}*/
-
-.active {
+button:hover.slide__btn {
     border-radius: 6px;
     border: 2px solid #B8FFEC;
     background: #FFF;
 }
+
+/*.active {*/
+/*    border-radius: 6px;*/
+/*    border: 2px solid #B8FFEC;*/
+/*    background: #FFF;*/
+/*}*/
 
 
 .services {
