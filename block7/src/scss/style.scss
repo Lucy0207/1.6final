@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'TT Lakes Regular';
+  src: url('../fonts/TTLakes-Regular.eot');
+  src: url('../fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/TTLakes-Regular.woff') format('woff'),
+  url('../fonts/TTLakes-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Lakes Medium';
+  src: url('../fonts/TTLakes-Medium.eot');
+  src: url('../fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/TTLakes-Medium.woff') format('woff'),
+  url('../fonts/TTLakes-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TT Lakes Bold';
+  src: url('../fonts/TTLakes-Bold.eot');
+  src: url('../fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/TTLakes-Bold.woff') format('woff'),
+  url('../fonts/TTLakes-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import "default_variables.scss";
+@import "common.scss";
+@import "wrapper.scss";
+@import "header.scss";
+@import "logo.scss";
+@import "menu.scss";
+@import "contacts.scss";
+@import "burger.scss";
+@import "nav.scss";
+@import "about-us.scss";
+@import "status-check.scss";
+@import "request.scss";
+@import "main.scss";
+@import "title.scss";
+@import "services.scss";
+@import "description-para.scss";
+@import "expanded.scss";
+@import "read-further.scss";
+@import "button";
+@import "brands";
+@import "section-title";
+@import "swiper";
+@import "prices";
+@import "footer";
+@import "copyright";
+
+@import "rotated";
+@import "equipment";
+@import "aside";
+@import "content";
+@import "modal";
+@import "submit-button";
+

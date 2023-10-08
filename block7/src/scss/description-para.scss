@@ -1,0 +1,19 @@
+.description-para {
+  margin-bottom: 56px;
+  padding: 0 16px 0 0;
+  //height: 90px;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .description-para {
+    flex: 0 0 50%;
+  }
+}
+
+@media (min-width: 1120px) {
+  .description-para {
+    width: 490px;
+  }
+}
+

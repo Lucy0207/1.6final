@@ -1,0 +1,27 @@
+.expanded {
+  display: none;
+}
+
+.expanded-big {
+  display: none;
+}
+
+
+@media (min-width: 768px) {
+  .services__description p.expanded {
+    display: block;
+    margin-bottom: 16px;
+  }
+}
+
+@media (min-width: 1120px) {
+  .services__description p.expanded {
+    display: none;
+  }
+  .expanded-big {
+    display: block;
+  }
+}
+
+
+

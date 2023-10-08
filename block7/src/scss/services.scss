@@ -1,0 +1,55 @@
+//$paragraphTextColor: #1B1C21;
+.services {
+  position: relative;
+  display: flex;
+  //flex-wrap: wrap;
+  flex-direction: column;
+  //justify-content: space-between;
+  column-gap: 50px;
+}
+
+@media (min-width: 768px) {
+  .front-page__services {
+    margin-top: 24px;
+  }
+}
+
+@media (min-width: 768px) {
+  .services {
+    flex-direction: row;
+    column-gap: 0;
+  }
+}
+
+.services__description p {
+  margin-bottom: 16px;
+}
+.services__description-text {
+  margin-right: 0;
+  color: $paragraphTextColor;
+  font-family: "TT Lakes Regular", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: 0.2px;
+}
+
+.services__picture {
+  width: 100%;
+  margin-right: 8px;
+}
+@media (min-width: 768px) {
+  .services__picture {
+    width: 360px;
+  }
+}
+
+@media (min-width: 1120px) {
+  .services__picture {
+    width: 531.346px;
+    margin-top: -5px;
+
+  }
+}
+

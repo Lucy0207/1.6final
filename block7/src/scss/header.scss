@@ -1,0 +1,95 @@
+//$background: #EAEAEA;
+@media (min-width: 1120px) {
+  .header {
+    display: none;
+  }
+}
+
+.header__container {
+  height: 88px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .header__container {
+    max-width: 1026px;
+    justify-content: space-between;
+  }
+}
+
+.header__logo {
+  margin-left: -16px;
+}
+
+.header__burger {
+  border: none;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .header__burger {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+}
+
+.header__menu {
+  display: none;
+}
+
+  @media (min-width: 768px) {
+    .header__menu {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+
+.header__centre {
+  position: relative;
+  &::after {
+    content: " ";
+    width: 2px;
+    height: 32px;
+    border-radius: 1px;
+    background: $background;
+    position: absolute;
+    right: -20px;
+    top: 25%;
+  }
+}
+
+@media (min-width: 768px) {
+  .header__centre::before {
+    content: " ";
+    width: 2px;
+    height: 32px;
+    border-radius: 1px;
+    background: $background;
+    position: absolute;
+    left: -35px;
+  }
+  .header__centre::after {
+    content: " ";
+    width: 2px;
+    height: 32px;
+    border-radius: 1px;
+    background: $background;
+    position: absolute;
+    right: -25px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header__centre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 441.27px;
+  }
+}
+
+
+

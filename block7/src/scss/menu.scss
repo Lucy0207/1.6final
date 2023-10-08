@@ -1,0 +1,14 @@
+.menu {
+  width: 96px;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .menu {
+    width: 172px;
+  }
+}
+

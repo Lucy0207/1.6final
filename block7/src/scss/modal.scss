@@ -1,0 +1,116 @@
+.modal {
+  display: none;
+}
+
+
+.modal-feedback--visible {
+  display: block;
+  right: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.modal-call--visible {
+  display: block;
+  transition: all 0.5s ease-in-out;
+  right: 0;
+}
+
+.modal__feedback-container, .modal__call-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+ /* left: 0;*/
+  overflow: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  z-index: 99;
+  padding: 24px 16px;
+  background-color: $buttonHoverColor;
+  transition: all 0.2s ease-in-out;
+
+}
+
+@media screen and (min-width: 768px) {
+  .modal--middle {
+    width: 440px;
+    right: 0;
+  }
+
+}
+
+//@media screen and (min-width: 1120px) {
+//  .modal--middle {
+//    width: 440px;
+//    transform: translateX(220%);
+//  }
+//
+//}
+
+.modal-button {
+  border: none;
+  background-color: transparent;
+}
+
+.modal-title {
+  margin-top: 40px;
+}
+
+.modal-feedback__form {
+  width: 100%;
+  margin-top: 24px;
+  input, textarea {
+    width: 98%;
+    padding: 12px 16px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid $background;
+  }
+}
+
+.modal-disclaimer {
+  span {
+    color: $brightPink;
+    font-family: "TT Lakes Regular";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+  }
+}
+
+.modal-feedback__button {
+  margin-top: 23px;
+  align-self: flex-end;
+}
+
+.modal__call-open::before {
+  content: "";
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="42" viewBox="0 0 40 42" fill="none"><rect width="40" height="41.3491" rx="20" fill="%23FF3E79"/><path fill-rule="evenodd" clip-rule="evenodd" d="M12.7602 24.0335L15.3002 23.7337C15.9102 23.6614 16.5102 23.8785 16.9402 24.323L18.7802 26.225C21.6102 24.7365 23.9302 22.3486 25.3702 19.4128L23.5202 17.5004C23.0902 17.0559 22.8802 16.4356 22.9502 15.8051L23.2402 13.2001C23.3602 12.156 24.2102 11.3704 25.2302 11.3704H26.9602C28.0902 11.3704 29.0302 12.3421 28.9602 13.5102C28.4302 22.3382 21.6002 29.3882 13.0702 29.9361C11.9402 30.0085 11.0002 29.0368 11.0002 27.8687V26.0803C10.9902 25.0362 11.7502 24.1576 12.7602 24.0335Z" fill="white"/></svg>');
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  background-repeat: no-repeat;
+}
+
+.modal__feedback-open::before {
+  content: "";
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="42" viewBox="0 0 40 42" fill="none"><rect width="40" height="41.3491" rx="20" fill="%23FF3E79"/><path fill-rule="evenodd" clip-rule="evenodd" d="M28 11.3704H12C10.9 11.3704 10.01 12.3007 10.01 13.4378L10 32.0449L14 26.8763H28C29.1 26.8763 30 25.9459 30 24.8088V13.4378C30 12.3007 29.1 11.3704 28 11.3704ZM21 22.742H15C14.45 22.742 14 22.2769 14 21.7083C14 21.1398 14.45 20.6746 15 20.6746H21C21.55 20.6746 22 21.1398 22 21.7083C22 22.2769 21.55 22.742 21 22.742ZM25 17.5734H15C14.45 17.5734 14 17.1082 14 16.5396C14 15.9711 14.45 15.5059 15 15.5059H25C25.55 15.5059 26 15.9711 26 16.5396C26 17.1082 25.55 17.5734 25 17.5734Z" fill="white"/><mask id="mask0_0_959" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="10" y="11" width="20" height="22"><path fill-rule="evenodd" clip-rule="evenodd" d="M28 11.3704H12C10.9 11.3704 10.01 12.3007 10.01 13.4378L10 32.0449L14 26.8763H28C29.1 26.8763 30 25.9459 30 24.8088V13.4378C30 12.3007 29.1 11.3704 28 11.3704ZM21 22.742H15C14.45 22.742 14 22.2769 14 21.7083C14 21.1398 14.45 20.6746 15 20.6746H21C21.55 20.6746 22 21.1398 22 21.7083C22 22.2769 21.55 22.742 21 22.742ZM25 17.5734H15C14.45 17.5734 14 17.1082 14 16.5396C14 15.9711 14.45 15.5059 15 15.5059H25C25.55 15.5059 26 15.9711 26 16.5396C26 17.1082 25.55 17.5734 25 17.5734Z" fill="white"/></mask><g mask="url(%23mask0_0_959)"></g></svg>');
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  background-repeat: no-repeat;
+}
+
+.modal__profile-open {
+  content: "";
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="42" viewBox="0 0 40 42" fill="none"><rect width="40" height="41.3491" rx="20" fill="%23FF3E79"/><path d="M20.5 19.6397C22.9853 19.6397 25 17.5571 25 14.988C25 12.4189 22.9853 10.3362 20.5 10.3362C18.0147 10.3362 16 12.4189 16 14.988C16 17.5571 18.0147 19.6397 20.5 19.6397Z" fill="white"/><path d="M10.0166 27.5088C9.88693 28.2629 10.5352 28.9439 11.339 28.9439H28.6604C29.4902 28.9439 30.1125 28.2629 29.9829 27.5088C29.2309 23.155 25.0561 20.6741 19.9997 20.6741C14.9433 20.6741 10.7686 23.155 10.0166 27.5088Z" fill="white"/></svg>');
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  background-repeat: no-repeat;
+}

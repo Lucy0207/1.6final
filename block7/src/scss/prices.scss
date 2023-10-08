@@ -1,0 +1,161 @@
+.prices__block {
+  padding-right: 36px;
+}
+
+.prices__title {
+  height: 56px;
+  padding: 16px;
+}
+
+.prices-header {
+  display: none;
+}
+
+@media screen and(min-width: 768px) {
+  .prices-header {
+    display: flex;
+    padding: 16px 34px 8px;
+    &__service {
+      flex: 1 1 auto;
+    }
+    &__price {
+      width: 74px;
+      margin-right: 22px;
+    }
+    &__deadline {
+      width: 220px;
+    }
+   }
+}
+
+.prices__wrapper {
+  display: flex;
+  height: 250px;
+  padding: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .prices__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 16px 0;
+  }
+
+}
+
+.prices__type {
+  background-color: $buttonHoverColor;
+  position: relative;
+  padding: 16px;
+  margin-right: 16px;
+  height: 200px;
+  border-radius: 6px;
+  span {
+    color: $buttonColor;
+    font-family: "TT Lakes Regular", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    opacity: 0.7218
+  }
+  div {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .prices__type {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0;
+    div {
+      margin-bottom: 0;
+    }
+    span {
+      display: none;
+    }
+    &::after {
+      content: '';
+      display: block;
+      width: 95%;
+      height: 1px;
+      background-color: $background;
+      margin-top: 10px;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+}
+
+.prices__button {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  .prices__button {
+    bottom: 16px;
+    right: 16px;
+  }
+}
+
+.prices__time {
+  width: 81px;
+}
+
+@media screen and (min-width: 768px) {
+  .prices__time {
+    margin-right: 140px;
+  }
+
+}
+
+.prices__money {
+  width: 74px;
+  margin-right: 16px;
+}
+
+.prices__service {
+  flex: 1 1 60%;
+}
+
+.prices-footnote {
+  max-width: 456px;
+  padding: 12px 12px 16px 24px;
+  margin-top: -44px;
+}
+
+@media screen and (min-width: 768px) {
+  .prices-footnote {
+    margin-top: 24px;
+  }
+
+}
+
+.prices-offer {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: $paragraphTextColor;
+  padding-left: 24px;
+  font-weight: 500;
+  font-size: 16px;
+  span:nth-child(2) {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .prices-offer {
+    flex-direction: row;
+    justify-content: flex-start;
+    column-gap: 2px;
+  }
+
+}

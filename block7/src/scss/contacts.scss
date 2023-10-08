@@ -1,0 +1,10 @@
+.contacts__menu {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .contacts__menu {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}

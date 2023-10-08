@@ -1,0 +1,16 @@
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  //height: 550px;
+}
+
+@media (min-width: 1120px) {
+  .wrapper {
+    max-width: 1426px;
+    margin: auto;
+    flex-direction: row;
+  }
+}

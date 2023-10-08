@@ -1,0 +1,173 @@
+.aside {
+  position: absolute;
+  left: -100%;
+  top: 0;
+  width: 320px;
+  z-index: 20;
+  transition: all 0.5s ease-in;
+  &--visible {
+    left: 0;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .aside {
+    position: relative;
+    width: 320px;
+    left: 0;
+    top: 0;
+    height: 100%;
+    &__close-button {
+      display: none;
+    }
+  }
+
+}
+
+.aside__container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  flex-shrink: 0;
+  padding: 18px 24px;
+  background: $buttonHoverColor;
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+}
+
+@media screen and (min-width: 1120px) {
+  .aside__container {
+    box-shadow: none;
+  }
+
+}
+
+.aside__header {
+  display: flex;
+  /*justify-content: space-between;*/
+}
+
+.aside__search-button, .close-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.aside__search {
+  margin-left: auto;
+}
+
+.aside__burger {
+  margin-right: 16.73px;
+}
+
+.aside__logo {
+  width: 97px;
+  height: 51px;
+  flex-shrink: 0;
+}
+
+.aside__menu {
+  flex: 1 0 auto;
+}
+
+.aside__footer {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.aside__menu-list {
+  list-style: none;
+}
+
+.aside__menu-item {
+  margin-top: 32px;
+  cursor: pointer;
+  a {
+    position: relative;
+    text-decoration: none;
+    color: $paragraphTextColor;
+    font-family: "TT Lakes Medium", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.2px;
+  }
+}
+
+.aside__menu-link--active::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -7%;
+  width: 4px;
+  height: 24px;
+  border-radius: 20px;
+  background-color: $activeHighlight;
+}
+
+
+
+.aside__menu-item a:hover {
+  opacity: 0.75;
+}
+
+.aside-contacts__menu {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 16px;
+}
+
+.aside-contacts__mail {
+  margin-top: 16px;
+}
+
+.aside-contacts__mail a {
+  text-decoration: none;
+  color: $paragraphTextColor;
+  font-family: "TT Lakes Medium", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.2px;
+}
+
+.aside-contacts__phone {
+  margin-top: 12px;
+}
+
+.aside-contacts__phone a {
+  text-decoration: none;
+  color: $paragraphTextColor;
+  font-family: "TT Lakes Bold", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 133.333% */
+  letter-spacing: -0.6px;
+}
+
+.aside-contacts__languages {
+  display: flex;
+  column-gap: 7px;
+  margin-top: 40px;
+  margin-bottom: 14px;
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $paragraphTextColor;
+    font-family: "TT Lakes Medium", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.2px;
+  }
+}
+
+.aside-contacts__languages a:hover {
+  opacity: 0.75;
+}
+

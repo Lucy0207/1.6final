@@ -1,0 +1,19 @@
+.submit-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 119px;
+  height: 32px;
+  border-radius: 16px;
+  border: 0;
+  background: $brightPink;
+  color: $buttonHoverColor;
+  text-align: right;
+  font-family: "TT Lakes Bold", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 200% */
+  letter-spacing: -0.15px;
+  text-transform: uppercase;
+}

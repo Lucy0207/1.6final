@@ -1,0 +1,20 @@
+.read-further {
+  margin-left: -20px;
+}
+
+.read-further__expand {
+  color: $paragraphTextColor;
+  font-family: "TT Lakes Medium", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.2px;
+}
+
+.read-further__picture {
+  margin-top: auto;
+  margin-left: 16px;
+  margin-bottom: 16px;
+  float: left;
+}
